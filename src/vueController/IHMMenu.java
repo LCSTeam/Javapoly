@@ -63,7 +63,7 @@ public class IHMMenu extends JFrame implements ActionListener{
 		this.imagePion = new ImageIcon[8];
 		for(int i=0 ; i<8 ; i++) {
 			
-			this.imagePion[i] = new ImageIcon(ClassLoader.getSystemResource(pions[i]+".png"));
+			this.imagePion[i] = new ImageIcon(ClassLoader.getSystemResource("pions/"+pions[i]+".png"));
 			
 		}
 		
