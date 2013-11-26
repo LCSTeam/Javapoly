@@ -20,12 +20,14 @@ public class AchatCarteGare extends CarteGare implements ActionListener{
 	private JButton boutonOui;
 	private JButton boutonNon;
 	private JPanel panelBoutons;
+	private Case laCase;
 	
 	public AchatCarteGare(JFrame parent, Case laCase) {
 		super(parent, laCase);
 		this.setTitle("Achat de propriété");
 		this.setSize(400,500);
 		this.carte.setLocation(60,40);
+		this.setLaCase(laCase);
 		this.creer();
 	}
 	
@@ -36,7 +38,7 @@ public class AchatCarteGare extends CarteGare implements ActionListener{
 		contenu.setLayout(null);
 
 		this.labelConfirmAchat = new JLabel(
-				"Voulez-vous acheter cette propriété :");
+				"Voulez-vous acheter cette propriété pour "+this.laCase.getPrix()+" € ?");
 				
 		this.boutonOui = new JButton("Oui");
 		this.boutonNon = new JButton("Non");
@@ -55,6 +57,16 @@ public class AchatCarteGare extends CarteGare implements ActionListener{
 		this.boutonNon.addActionListener(this);
 
 	}
+
+	public Case getLaCase() {
+		return laCase;
+	}
+
+
+	public void setLaCase(Case laCase) {
+		this.laCase = laCase;
+	}
+
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
