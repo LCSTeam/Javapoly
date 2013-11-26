@@ -1,42 +1,31 @@
 package vueController;
 
-import java.awt.Color;
 import java.awt.Container;
-import java.awt.Graphics2D;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+import vueController.carteVerticale.CartePropriete;
 import model.Case;
 
 @SuppressWarnings("serial")
-public class AchatCarte extends JDialog implements ActionListener {
+public class AchatCartePropriete extends CartePropriete implements ActionListener {
 
 	private JLabel labelConfirmAchat;
-	private JLabel labelMiniaturePropriete;
 	private JButton boutonOui;
 	private JButton boutonNon;
 	private JPanel panelBoutons;
-		
-	private Case caseChoisie;
 
-	public AchatCarte(JFrame parent, Case laCase) {
-		super();
+	public AchatCartePropriete(JFrame parent, Case laCase) {
+		super(parent, laCase);
 		this.setTitle("Achat de propriété");
-		this.caseChoisie = laCase;
-		this.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-		this.setSize(400, 500);
-		this.setLocationRelativeTo(null);
-		this.setResizable(false);
+		this.setSize(400,500);
+		this.carte.setLocation(60,40);
 		this.creer();
 	}
 	
@@ -48,11 +37,7 @@ public class AchatCarte extends JDialog implements ActionListener {
 
 		this.labelConfirmAchat = new JLabel(
 				"Voulez-vous acheter cette propriété :");
-		this.labelConfirmAchat.setBackground(Color.white);
-		this.labelMiniaturePropriete = new JLabel();
-		this.labelMiniaturePropriete.setBackground(Color.red);
-		this.labelMiniaturePropriete.setIcon(new ImageIcon(ClassLoader.getSystemResource("Blabla.jpg")));
-
+				
 		this.boutonOui = new JButton("Oui");
 		this.boutonNon = new JButton("Non");
 
@@ -62,10 +47,8 @@ public class AchatCarte extends JDialog implements ActionListener {
 		this.panelBoutons.add(this.boutonOui);
 		this.panelBoutons.add(this.boutonNon);
 	
-		this.labelConfirmAchat.setBounds(40, 20, 300, 20);
-		this.labelMiniaturePropriete.setBounds(40,50,300,400);
+		this.labelConfirmAchat.setBounds(50, 15, 300, 20);
 		contenu.add(this.labelConfirmAchat);	
-		contenu.add(this.labelMiniaturePropriete);
 		contenu.add(this.panelBoutons);
 		
 		this.boutonOui.addActionListener(this);
