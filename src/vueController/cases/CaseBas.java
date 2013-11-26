@@ -54,8 +54,8 @@ public class CaseBas extends Case{
 		if(this.getPrix()!=0)
 			this.add(this.labelPrix);
 
-		Insets emptyInsets = new Insets(-1, -1, -1, -1);
-		this.setMargin(emptyInsets);	
+		this.setMargin(new Insets(-1, -1, -1, -1));
+		
 		this.labelPrix.setHorizontalAlignment(SwingConstants.CENTER);
 		this.labelNom.setEditable(false);
 		this.labelNom.setLineWrap(true);

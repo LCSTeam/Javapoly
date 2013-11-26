@@ -59,7 +59,16 @@ public void dessinerLaCase()
 	this.labelNom.setLineWrap(true);
 	this.labelNom.setWrapStyleWord(true);
 	this.labelNom.setOpaque(false);
-	this.labelNom.setMargin(new Insets(-7,-7,-7,-7));
+	//this.labelNom.setMargin(new Insets(-7,-7,-7,-7));
+	
+	if(this.getEtat()==2)
+		this.labelNom.setMargin(new Insets(0, -4,-1, -1));
+	
+	if(this.getEtat()==4)
+		this.labelNom.setMargin(new Insets(0, 4,-1, -1));
+	
+	if(this.getEtat()==3)
+		this.labelNom.setMargin(new Insets(-10, 0, 0, 0));
 	
 	if(this.getPrix()!=0)
 	{
