@@ -1,0 +1,163 @@
+Le jeu en bref
+Monopoly est le jeu où l'on achète, loue et vend des propriétés de façon à accroître ses richesses - le joueur le plus riche étant le vainqueur. 
+En partant de la case départ, déplacez votre pion sur le plateau de jeu suivant votre résultat au lancer de dés. 
+Quand vous arrivez sur une case qui n'appartient encore à personne, vous pouvez l'acheter à la banque. Si vos décidez de ne pas l'acheter, la propriété sera proposée aux enchères et reviendra au plus offrant. 
+Les joueurs qui sont propriétaires perçoivent des loyers de la part des adversaires s'arrêtant sur leur terrain. La construction des maisons et hôtels augmente considérablement le loyer que vous pouvez percevoir pour vos propriétés ; aussi, il est conseillé de construire dans un maximum de sites. 
+Si vous avez besoin davantage d'argent, la banque peut vous en prêter par la biais d'hypothèque sur vos propriétés. Vous devez toujours vous plier aux instructions données par les cartes caisse de communauté et chance. Parfois, vous serez envoyé en prison.
+
+But du jeu
+Etre le seul joueur qui n'ait pas fait faillite.
+
+Matériel
+1 plateau de jeu
+10 pions
+28 cartes de propriété
+16 cartes chance
+16 cartes caisse de communauté
+1 paquet de billets de banque pour MONOPOLY
+32 maisons
+12 hôtels
+2 dés
+
+Règle de jeu rapide
+Monopoly se joue aussi de manière plus rapide. Reportez-vous au paragraphe "Règle pour une partie plus rapide".
+
+Préparation du jeu
+1. Rangez dans la boîte les maisons, hôtels, cartes de propriété et les billets de banque (en fonction de leur valeur)
+2. Séparez les cartes chance et caisse de communauté. Mélangez-les et posez-les à l'endroit indiqué sur le plateau de jeu.
+3. Chaque joueur choisit un pion et le met sur la case départ.
+4. Le banquier et la banque.
+Un des joueurs est élu banquier. S'il y a plus de 5 joueurs, le banquier peut choisir de n'assumer que ce rôle.
+Le banquier donne à chaque joueur 150 000 francs (ou 1 500 euros) répartis de la façon suivante :
+
+2 x 50 000 F	4 x 10 000 F	1 x 5 000 F
+1 x 2 000 F	2 x 1 000 F	1 x 500 F
+5 x 100 F	 	 
+2 x 500 €	4 x 1000 €	1 x 50 €
+1 x 20 €	2 x 10 €	1 x 5 €
+5 x 1 €	 	 
+» Lien direct : Répartition des billets de Monopoly en euros et dans d'autres monnaies
+Le banquier s'occupe aussi des cartes de propriété, des maisons et hôtels jusqu'à ce qu'ils soient achetés par les joueurs. De plus la banque verse des salaires ou des primes, prête de l'argent sur les propriétés hypothéquées et encaisse l'argent des taxes, des amendes, des prêts et intérêts. Dans le cas d'une vente aux enchères, c'est le banquier qui dirige la vente.
+La banque ne fait jamais faillite : elle peut mettre en circulation autant d'argent que nécessaire sous forme de reconnaissances de dettes écrites sur du papier ordinaire.
+5. Les joueurs lancent les deux dés. Le joueur qui fait le plus grand score joue le premier, puis c'est au tour du joueur situé à sa gauche et ainsi de suite.
+
+Une partie de Monopoly
+Quand c'est votre tour, lancez les deux dés et avancez d'autant de cases que le nombre de points indiqués sur les dés. La case où vous vous arrêterez determinera ce que vous avez à faire. Deux pions ou plus peuvent d'arrêter sur la même case en même temps. Suivant la case où vous vous arrêter, vous pouvez :
+
+Acheter une propriété
+Payer un loyer au propriétaire,
+Payer des taxes,
+Tirer une carte chance et caisse de communauté,
+Aller en prison,
+Vous reposer sur le parc gratuit,
+Toucher votre salaire de 20 000 francs (ou 200 €).
+Doubles
+Si vous faites un double, effectuez les opérations habituelles sur la case où vous vous arrêtez, puis relancez les dés. Si vous faites trois doubles à la suite, rendez-vous imméditement en prison.
+
+En passant par la case "départ"
+Chaque fois que vous passez ou vous arrêtez sur la case départ, vous recevez 20 000 francs (ou 200 €) de la banque. Il est possible de percevoir deux salaires pendant le même tour si, par exemple, vous tirez une cartes chance ou caisse de communauté juste après être passé par la case départ, et que cette carte vous indique "Avancez jusqu'à la case départ".
+
+» Lien direct : Que gagne- t-on lorsque l'on s'arrête sur la case "Départ" ?
+Achat de propriétés
+Si vous vous arrêtez sur une propriété qui n'appartient pas déjà à un autre joueur, vous pouvez l'acheter. Si vous décidez de l'acheter, payez à la banque le prix indiqué sur la case. Vous recevrez en échange, comme preuve de cette acquisition, une carte de propriété que vous devez garder face visible devant vous. Si vous décidez de ne pas l'acheter, le banquier doit immédiatement ouvrir une vente aux enchères,en commençant à n'importe quel prix fixé par un joueur désireux d'acheter. La propriété revient au plus offrant. Même si vous avez refusé de l'acheter au prix initial, vous pouvez participer à la vente aux enchères.
+
+Etre propriétaire
+Le fait d'être propriétaire vous permet de percevoir un loyer de la part de tous les locataires qui s'arrêtent sur vos terrains. Vous pouvez construire sur n'importe quelle propriété à partir du moment où vous possédez tous les terrains de la même couleur que celle-ci, c'est-à-dire dès que vous en avez le monopole.
+
+Arrêt sur une propriété déjà achetée
+Si vous vous arrêtez sur une propriété qui a été achetée par un autre joueur, il peut vous réclamer un loyer. Le joueur qui est propriétaire de cette case doit vous réclamer le loyer avant que le deuxième joueur après vous ait lancé les dés. Le montant du loyer est indiqué sur la carte de propriété et varie selon le nombre de bâtiments qu'elle comporte. Si toutes les propriétés d'un même groupe (terrains de même couleur) appartiennent au même joueur, le loyer est doublé pour chaque propriétéde ce groupe où il n'y a pas encore de construction. Toutefois, un propriétaire qui possède tout un groupe ne peut pas recevoir ce double loyer si une des propriétés est hypothéquée. Sur les terrains où des maisons et des hôtels ont été construits, le loyer à payer est indiqué sur la carte de propriété correspondante. Aucun loyer ne sera dû pour une propriété hypothéquée.
+
+Arrêt sur les services publics
+Si vous vous arrêtez sur un service public, vous pouvez l'acquérir s'il n'a pas encore été acheté. Comme pour les autres propriétés, payez la somme dûe à la banque. S'il appartient déjà à un autre joueur, ce joueur peut vous demander de lui payer un loyer suivant le nombre de points obtenus aux dés. Si le propriétaire a seulement un des deux services publics, le loyer sera le total de vos dés multiplié par 400 (par 4 si le jeu est en euros). Mais si le propriétaire a les deux en sa possession, vous devez payer 1000 fois (10 fois si le jeu est en euros) le total des dés. Si vous êtes"envoyé" sur cette case à cause d'une carte chance ou caisse de communauté, vous devez relancer les dés pour déterminer le montant à payer.
+
+Arrêt sur une gare
+Si vous êtes le premier à vous errêter sur une gare, vous avez la possibilité de l'acheter. Sinon, elle sera mise en vente par le banquier dans une vente aux enchères à laquelle vous pourrez participez. Si la gare appartient déjà à un autre joueur, vous devez payer le montant indiqué sur la carte de propriété. Ce montant variera suivant le nombre de gares détenues par ce joueur.
+Arrêt sur une case chance ou caiise de communauté
+S'arrêter sur une de ces cases signifie que vous devez prendre la carte située au-dessus du paquet correspondant. Ces cartes peuvent vous demander de :
+- déplacer votre pion,
+- payer une certaine somme - taxes, par exemple,
+- recevoir de l'argent,
+- aller en prison,
+- sortie de prison sans payer.
+Vous devez suivre les instructions de la carte et agir aussitôt après avoir remis la carte sous le paquet. Si vous tirez une carte "Vous êtes libéré de prison", vous pouvez la garder jusqu'à ce que vous décidiez de l'utiliser, ou de la vendre à un autre joueur.
+Remarque : une carte peut vous demander de vous rendre à une autre case. Si vous passez par la case départ, recevez 20 000 francs (200 €). Vous ne passez pas par la case départ quand vous êtes envoyé en prison.
+
+Arrêt sur les cases "Impôts" et "Taxe de luxe"
+Si vous vous arrêtez sur l'une de ces cases, payez le montant indiqué à la banque.
+
+Parc gratuit
+Si vous vous arrêtez sur cette case, vous pouvez vous reposez en attendant le prochain tour ou continuer vos transactions normalement (par exemple, percevoir des loyers, construire sur vos propriétés...).
+
+» Lien direct : Que gagne t-on lorsque l'on se pose sur la case "Parc Gratuit" ?
+Prison
+Vous serez envoyé en prison si :
+- vous vous arrêtez sur la case "Allez en prison",
+- vous tirez une carte chance ou caisse de communauté qui vous indique "Allez en prison",
+- vous faites trois doubles à la suite.
+Votre tour s'arrête quand vous êtes envoyé en prison. Pour sortir de prison il faut effectuer l'une des actions suivantes :
+- payer une amende de 5 000 francs (50 €) et jouer au prochain tour,
+- acheter une carte "Vous êtes libéré de prison" à un autre joueur, à un prix convenu entre vous,
+- utiliser une carte "Vous êtes libéré de prison" si vous en possédez une,
+- attendre en prison pendant trois tours, en lançant les dés à chaque tour pour essayer de faire un double. Si vous faites un double, sortez de prison en utilisant ce lancer pour avancer.
+Si après les trois tours, vous n'avez pas fait de double,payez 5 000 francs (50 €) et déplacez votre pion suivant votre lancer de dés. Pendant que vous êtes en prison, vous pouvez toucher vos loyers. Si vous n'êtes pas "envoyé en prison", mais que vous vous arrêtez sur la case prison, vous êtes un simple visiteur et ne subissez aucune pénalié.
+
+Maisons
+Une fois que vous possédez les titres de tous les terrains d'une même couleur, vous pouvez acheter des maisons pour construire sur ces propriétés. 
+Cela augmente le montant que vous faites payer aux locataires. Le prix d'une maison est indiqué sur la carte de propriété. 
+Vous pouvez acheter quand c'est votre tour de jouer ou entre les tours des autres joueurs. Vous devez construire uniformément. 
+Vous ne pouvez pas construire de deuxième maison sur un terrain tant que vous n'avez pas construit une maison sur chaque terrain de ce groupe, ainsi de suite, jusqu'à ce que chaque terrain de ce groupe possède quatre maisons. 
+La vente des maisons doit elle aussi se faire uniformément. Vous pouvez acheter ou vendre à n'importe quel moment, autant de bâtiments que vous le désirez, tant que vos finances vous le permettent. Aucune maison ne peut être construite sur une propriété si une des propriétés du groupe est hypothéquée. Si vous avez toutes les propriétés d'un groupe (terrains de même couleur) et que seulement une ou deux sont "construites", vous pouvez demander un double loyer de "terrain nu" pour la ou les propriétés du groupe sans bâtiment.
+
+Hôtels
+Vous devez avoir quatre maisons sur chaque site d'un groupe avant de pouvoir acheter un hôtel. On achète les hôtels de la même façon que l'on achète les maisons. Ils coûtent quatre maisons qui sont retournées à la banque, plus le prix indiqué sur la carte de propriété. On ne peut construire qu'un hôtel par propriété.
+
+Crise du bâtiment
+S'il ne reste plus de maisons à vendre, vous devez attendre que les autres joueurs en retournent à la banque pour pouvoir en acheter. De même, quand vous vendez des hôtels, vous ne pouvez pas les remplacer par des maisons dans le cas où il n'en resterait plus. S'il ne reste qu'un nombre limité de maisons ou hôtels, et que deux joueurs ou plus souhaitent les acheter, alors les bâtiments seront vendus aux enchères et accordés au plus offrant. L'enchère commence au prix le plus bas indiqué sur la carte de propriété.
+
+Vente de propriétés
+Vous pouvez vendre des propriétés à un autre joueur à un prix convenu entre vous. Toutefois, aucun terrain ne peut être vendu à un autre joueur s'il y a des bâtiments construits sur un des terrrains du même groupe. 
+Si vous voulez vendre un terrain appartenant à un groupe, vous devez d'abord vendre tous les bâtiments situés sur ces sites à la banque. Les maisons doivent être vendues uniformément, de la même façons qu'elles ont été achetées (voir la rubrique "maisons" ci-dessus). Les maisons et les hôtels ne peuvent être vendus à d'autres joueurs. Ils doivent être vendus à la banque à la moitiéde leur valeur, indiquée sur la carte de propriété. Ils peuvent être vendus à n'importe quel moment. Pour les hôtels, la banque paiera la moitié du prix de l'hôtel, plus la moitié du prix des quatre maisons qui furent données à la banque pour l'acquisition de l'hôtel. Tous les hôtels d'un même groupe doivent être vendus en même temps. 
+Si vous n'avez besoin que d'un peu de liquidité, les hôtels peuvent être échangés auprès de la banque contre des maisons de façon à récupérer de l'argent. Pour cela, vous devez échanger votre hôtel contre quatre maisons et recevoir la moitié de la valeur de l'hôtel en liquide. Une propriété hypothéquée ne peut pas être vendue à la banque, mais seulement à d'autres joueurs.
+
+Hypothèques
+S'il ne vous reste plus d'argent et que vous devez vous acquitter d'une dette, vous pouvez hypothéquer une propriété. Pour cela, vendez tout d'abord les bâtiments de cette propriété à la banque. 
+Pour hypothéquer une propriété, tournez la carte de propriété face cachée, et recevez la valeur de votre hypothèque de la banque, valeur qui est indiquée au dos de la carte. Quand vous voulez lever l'hypothèque, vous devez payer cette valeur additionnée de 10% d'intérêts. 
+Si vous hypothéquez une propriété, vous êtes toujours en sa possession. 
+Aucun joueur ne peut l'acquérir sans votre accord, même en payant l'hypothèque à la banque. 
+Vous ne pouvez percevoir aucun loyer pour une propriété hypothéquée, mais vous continuez à percevoir le loyer des propriétés du même groupe. 
+Vous pouvez cependant choisir de vendre une propriété hypothéquée à un autre joueur à un prix convenu entre vous. 
+L'acquéreur peut alors décider de faire lever l'hypothèque immédiatement en payant la valeur de l'hypothèque plus les 10% d'intérêts. 
+Quand il n'y a plus d'hypothèque sur aucun des terrains d'un groupe, le propriétaire peut recommencer à construire sur ces terrains.
+
+Faillite
+Si vous devez plus d'argent à la banque ou à un joueur que vous ne puissiez rassembler, vous êtes déclaré en faillite et vous êtes éliminé. 
+Si votre dette est envers la banque, elle récupère votre argent et vos cartes de propriété. 
+Le banquier les vend ensuite une par une aux enchères ; 
+chaque propriété revient au plus offrant. Vous devez remettre les cartes "vous êtes libéré de prison" en-dessous de leurs paquets respectifs. 
+Si vous êtes mis en faillite par un autre joueur, vos maisons et hôtels sont vendues à la banque à la moitié de leur valeur initiale, et ce joueur récupère votre argent, vos cartes de propriété, et vos cartes "Vous êtes libéré de prison". Si vous avez des propriété hypothéquées, il doit immédiatement payer 10% puis choisir de conserver les hypothèques sur ces propriétés, ou tout régler tout de suite.
+
+Remarques sur le jeu
+Si vous devez un loyer plus important que ce que vous pouvez payer en liquide, vous pouvez régler une partie de votre dette cash et une autre partie en propriétés dépourvues de bâtiments. Le créancier peut alors accepter une ou plusieurs prorpiétés ( y compris si elles sont hypothéquées) à une valeur supérieure à leur valeur réelle pour réunir un groupe complet, ou pour empêcher un autre joueur d'obtenir le contrôle de cette propriété.
+Si vous possédez des propriétés, c'est à vous de vérifier que les autres joueurs vous règlent les loyers qui vous sont dûs.
+Seule la banque peut prêter de l'argent à un joueur et ce, seulement par le biais des hypothèques.
+Aucun joueur ne peut préter de l'argent ni emprunter à un autre joueur.
+
+Le vainqueur
+Le dernier joueur restant en jeu est le vainqueur.
+
+Règle pour une partie plus rapide
+Durant la préparation de la partie, le banquier mélange les cartes de propriétés. Le joueur à la gauche du banquier coupe alors les cartes et le banquier distribue deux cartes de propriétés à chaque joueur (y compris lui-même s'il prend part au jeu). Les joueurs payent de suite le prix indiqué sur les deux propriétés qu'ils viennent de recevoir. La partie commence alors selon les règles d'une partie normale.
+Dans cette "partie courte", vous ne devez construire que trois maisons (au lieu de quatre) sur chque terrain avant de pouvoir acheter un hôtel.
+Le loyer perçu pour un hôtel reste le même que dans la règle standard. Si l'on désire revendre un hôtel, sa valeur est réduite de moitié par rapport au prix d'achat, plus la moitié de la valeur de chacune des trois maisons.
+Fin de la partie : le premier joueur ayant fait faillite se retire du jeu et la partie se termine quand un deuxième joueur fait faillite. Le joueur en faillite transmet tous ses biens à son créancier (banque ou joueur).
+Chaque joueur restant évalue alors sa richesse selon :
+
+la somme des billets de banque qu'il a en main,
+ses terrains, services publics et gares au prix indiqué sur le plateau de jeu,
+ses propriétés hypothéquées estimées à la moitié de la valeur indiquée sur le plateau de jeu,
+ses maisons estimées au prix d'achat,
+ses hôtels estimés au prix d'achat, qui comprend la valeur des 3 maisons données en échange.
+Le vainqueur est le joueur le plus riche.
+
+Partie limitée dans le temps
+Avant de commencer la partie, convenez d'une heure limite pour la fin du jeu. Le joueur le plus riche à l'heure conveneu est le vainqueur. Au début de la partie les cartes de propriété sont mélangées et coupées, et le banquier donne deux cartes à chaque joueur. Les joueurs payent aussitôt à la banque le prix de ces propriétés et le jeu continue normalement.
