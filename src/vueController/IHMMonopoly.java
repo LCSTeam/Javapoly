@@ -459,7 +459,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 					c.setVisible(true);
 					AchatCarteGare a = new AchatCarteGare(this,(Case) this.cases[i]);
 					a.setVisible(true);
-					a.setModal(true);
+					//a.setModal(true);
 				}
 				
 				else if (((Case) this.cases[i]).getEtat()==7)// Compagnie
@@ -469,7 +469,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 					c.setVisible(true);
 					AchatCarteCompagnie a = new AchatCarteCompagnie(this,(Case) this.cases[i]);
 					a.setVisible(true);
-					a.setModal(true);
+				//	a.setModal(true);
 				}
 
 				else {
@@ -478,7 +478,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 					c.setVisible(true);
 					AchatCartePropriete a = new AchatCartePropriete(this,(Case) this.cases[i]);
 					a.setVisible(true);
-					a.setModal(true);
+					//a.setModal(true);
 				}
 			}
 

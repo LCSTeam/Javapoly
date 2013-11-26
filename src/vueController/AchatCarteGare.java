@@ -1,10 +1,12 @@
 package vueController;
 
+import java.awt.Color;
 import java.awt.Container;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -21,12 +23,13 @@ public class AchatCarteGare extends CarteGare implements ActionListener{
 	private JButton boutonNon;
 	private JPanel panelBoutons;
 	private Case laCase;
+	private boolean achetee;
 	
 	public AchatCarteGare(JFrame parent, Case laCase) {
 		super(parent, laCase);
 		this.setTitle("Achat de propriété");
 		this.setSize(400,500);
-		this.carte.setLocation(60,40);
+		this.carte.setLocation(60,50);
 		this.setLaCase(laCase);
 		this.creer();
 	}
@@ -66,16 +69,42 @@ public class AchatCarteGare extends CarteGare implements ActionListener{
 	public void setLaCase(Case laCase) {
 		this.laCase = laCase;
 	}
+	
+	public boolean estAchetee(Case laCase){
+		
+		if(this.achetee==true){
+			
+			this.laCase.setBackground(Color.red);
+			return true;
+		}else
+		
+			return false;
+				
+	}
+
+
+	public boolean isAchetee() {
+		return achetee;
+	}
+
+
+	public void setAchetee(boolean achetee) {
+		this.achetee = achetee;
+	}
 
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
 		if(e.getSource()==this.boutonOui){
+			this.setAchetee(true);
+			this.estAchetee(laCase);
 			JOptionPane.showMessageDialog(null, "Félicitations ! cette propriété est désormais la vôtre !");
+			
 			this.dispose();
 		}
 		if(e.getSource()==this.boutonNon){
+		
 			this.dispose();
 		}
 
