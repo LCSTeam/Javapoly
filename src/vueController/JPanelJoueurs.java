@@ -19,15 +19,16 @@ public class JPanelJoueurs extends JPanel implements ActionListener{
 	private JLabel banque;
 	private Joueur joueur;
 	
-	public JPanelJoueurs() {
+	public JPanelJoueurs(Joueur j) {
 		
 		this.setBounds(10,0,230,100);
 		TitledBorder contour = BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black),
 				"Joueur", TitledBorder.CENTER, TitledBorder.LEFT);
-		joueur= new Joueur();
 		this.setBorder(contour);
+		this.joueur =j;
 		this.setBackground(new Color(214, 231, 212));
 		this.dessinerPanel();
+		
 		
 	}
 	
@@ -50,7 +51,7 @@ public class JPanelJoueurs extends JPanel implements ActionListener{
 		
 		if(e.getSource()==this.voirCasesJoueur){
 			
-			AfficherCartesJoueur a = new AfficherCartesJoueur(joueur);
+			AfficherCartesJoueur a = new AfficherCartesJoueur(this.joueur);
 			a.setVisible(true);
 			a.setModal(true);
 			

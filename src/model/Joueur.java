@@ -51,7 +51,9 @@ public class Joueur
 		while (it.hasNext()){
 			Integer cle = (Integer)it.next();
 		   	Case valeur = (Case)cartes.get(cle);
+		   	
 		System.out.println( cle.toString() + " "+valeur.toString() + "");
+		//System.out.println("numéro : "+((Case) cartes).getNumero()+ " la Case : " + ((Case) cartes).getNom());
 		
 		}
 		

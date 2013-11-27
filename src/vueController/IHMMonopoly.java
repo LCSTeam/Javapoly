@@ -9,6 +9,7 @@ import java.io.OutputStream;
 import javax.swing.*;
 
 import model.Case;
+import model.Joueur;
 
 import com.sun.image.codec.jpeg.JPEGCodec;
 import com.sun.image.codec.jpeg.JPEGImageEncoder;
@@ -57,9 +58,11 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 	private JLabel labelDe2;
 	private JLabel deplacement;
 	
-	private int nbJoueurs = 3;
+	private int nbJoueurs = 2;
 
 	private JLabel unPion;
+	
+	private Joueur [] joueurs;
 	
 	/////Eléments du menu///////////////////
 	
@@ -170,12 +173,18 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		this.panelCartesJoueurs.setBackground(new Color(214, 231, 212));
 		
 		
-		this.panelUnJoueur = new JPanelJoueurs[4];
+		this.panelUnJoueur = new JPanelJoueurs[nbJoueurs];
+		this.joueurs = new Joueur[nbJoueurs];
 		for(int i=0;i<nbJoueurs;i++)
 		{
-			this.panelUnJoueur[i] = new JPanelJoueurs();
+			this.joueurs[i] = new Joueur();
+			this.joueurs[i].getCartes().put(1, new Case(1));
+			this.joueurs[i].getCartes().put(2, new Case(2));
+			this.panelUnJoueur[i] = new JPanelJoueurs(joueurs[i]);
 			this.panelCartesJoueurs.add(this.panelUnJoueur[i]);
+
 		}	
+		
 		
 		//Panel des dés
 		this.panelDes= new JPanel();
@@ -476,7 +485,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 					CartePropriete c = new CartePropriete(this,(Case) this.cases[i]);
 					c.setModal(true);
 					c.setVisible(true);
-					AchatCartePropriete a = new AchatCartePropriete(this,(Case) this.cases[i]);
+					AchatCartePropriete a = new AchatCartePropriete(this,(Case) this.cases[i], this.joueurs[1]);
 					a.setVisible(true);
 					//a.setModal(true);
 				}

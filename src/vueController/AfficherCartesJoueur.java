@@ -36,13 +36,9 @@ public class AfficherCartesJoueur extends JDialog{
 		labelCartesJoueur.setBackground(Color.red);
 		labelCartesJoueur.setBounds(5, 5, 290, 390);
 		
-		if(joueur.getCartes().isEmpty()==false){
-			joueur.afficherCartes();	
-		}
-		else
-			System.out.println("Pas de cartes");
 		
-		
+		joueur.afficherCartes();	
+	
 	}
 
 	public Joueur getJoueur() {
