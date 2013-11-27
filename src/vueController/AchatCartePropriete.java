@@ -35,6 +35,7 @@ public class AchatCartePropriete extends CartePropriete implements ActionListene
 		this.carte.setLocation(60,50);
 		this.setLaCase(laCase);
 		this.creer();
+		j = new Joueur();
 	}
 	
 	
@@ -102,10 +103,11 @@ public void setAchetee(boolean achetee) {
 			this.setAchetee(true);
 			this.estAchetee(laCase);
 			
-		
-			System.out.println("Il y a des cartes");	
-			j.cartes.put(laCase.getNumero(), laCase);	
-			//j.afficherCartes();
+			j.afficherCartes();
+			System.out.println("numéro : "+laCase.getNumero()+ "laCase : " + laCase.getNom());
+			
+			j.cartes.put(((Case)laCase).getNumero(),(Case)laCase);
+			
 			
 			JOptionPane.showMessageDialog(null, "Félicitations ! cette propriété est désormais la vôtre !");
 			this.dispose();

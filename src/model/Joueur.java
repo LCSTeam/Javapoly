@@ -16,13 +16,11 @@ public class Joueur
 	
 	public Map<Integer, Case> cartes ;
 	
-	public Joueur(){
+	public Joueur()
+	{
 		this.cartes = new HashMap<Integer, Case>();
-		this.afficherCartes();
-		
-		
-		
-		
+		this.cartes.put(1, new Case(1));
+		this.cartes.put(2, new Case(2));
 	}
 	public String getPseudo() {
 		return pseudo;
@@ -53,16 +51,16 @@ public class Joueur
 	public void afficherCartes(){
 		
 	
-		Set cles = cartes.keySet();
-		Iterator it = cles.iterator();
+		Iterator<Integer> it = cartes.keySet().iterator();
 		while (it.hasNext()){
-		   Object cle = it.next(); // tu peux typer plus finement ici
-		   Object valeur = cartes.get(cle); // tu peux typer plus finement ici
+			Integer cle = (Integer)it.next();
+		   	Case valeur = (Case)cartes.get(cle);
 		System.out.println( cle.toString() + valeur.toString() + "");
 		}	
 			
 			
 		
 	}
+	
 	
 }
