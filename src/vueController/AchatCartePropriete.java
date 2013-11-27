@@ -27,6 +27,7 @@ public class AchatCartePropriete extends CartePropriete implements ActionListene
 	private Case laCase;
 	private boolean achetee;
 	private Joueur j;
+	private boolean sendData;
 
 	public AchatCartePropriete(JFrame parent, Case laCase, Joueur joueur) {
 		super(parent, laCase);
@@ -102,12 +103,7 @@ public void setAchetee(boolean achetee) {
 		if(e.getSource()==this.boutonOui){
 			this.setAchetee(true);
 			this.estAchetee(laCase);
-			
-			
-			//System.out.println("numéro : "+laCase.getNumero()+ " la Case : " + laCase.getNom());
-			
-			j.getCartes().put(laCase.getNumero(), laCase);
-			//j.afficherCartes();
+
 						
 			JOptionPane.showMessageDialog(null, "Félicitations ! cette propriété est désormais la vôtre !");
 			this.dispose();

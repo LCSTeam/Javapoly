@@ -487,6 +487,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 					c.setVisible(true);
 					AchatCartePropriete a = new AchatCartePropriete(this,(Case) this.cases[i], this.joueurs[1]);
 					a.setVisible(true);
+					this.joueurs[1].getCartes().put(((Case)this.cases[i]).getNumero(), ((Case)this.cases[i]));
 					//a.setModal(true);
 				}
 			}
