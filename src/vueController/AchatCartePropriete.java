@@ -15,6 +15,7 @@ import javax.swing.JPanel;
 
 import vueController.carteVerticale.CartePropriete;
 import model.Case;
+import model.Joueur;
 
 @SuppressWarnings("serial")
 public class AchatCartePropriete extends CartePropriete implements ActionListener {
@@ -25,6 +26,7 @@ public class AchatCartePropriete extends CartePropriete implements ActionListene
 	private JPanel panelBoutons;
 	private Case laCase;
 	private boolean achetee;
+	private Joueur j;
 
 	public AchatCartePropriete(JFrame parent, Case laCase) {
 		super(parent, laCase);
@@ -99,6 +101,12 @@ public void setAchetee(boolean achetee) {
 		if(e.getSource()==this.boutonOui){
 			this.setAchetee(true);
 			this.estAchetee(laCase);
+			
+		
+			System.out.println("Il y a des cartes");	
+			j.cartes.put(laCase.getNumero(), laCase);	
+			//j.afficherCartes();
+			
 			JOptionPane.showMessageDialog(null, "Félicitations ! cette propriété est désormais la vôtre !");
 			this.dispose();
 		}

@@ -31,12 +31,12 @@ public class JPanelJoueurs extends JPanel implements ActionListener{
 	
 	public void dessinerPanel(){
 		this.setLayout(null);
-		this.voirCasesJoueur = new JButton("Voir les propriétés");
-		this.banque = new JLabel("Banque :");
 		this.setJoueur(new Joueur());
-		
+		this.voirCasesJoueur = new JButton("Voir les propriétés");
+		this.banque = new JLabel("Banque : "+this.joueur.getBourse());
+
 		this.voirCasesJoueur.setBounds(40,65,150,30);
-		this.banque.setBounds(10,25,60,20);
+		this.banque.setBounds(10,25,150,20);
 		this.add(this.voirCasesJoueur);
 		this.add(this.banque);
 		
@@ -44,6 +44,8 @@ public class JPanelJoueurs extends JPanel implements ActionListener{
 	
 	public void afficherCartesJoueurs(){
 		
+		JPanel j =new JPanel();
+		this.joueur.afficherCartes();
 	}
 
 	@Override

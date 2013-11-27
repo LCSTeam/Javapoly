@@ -49,7 +49,7 @@ public class Case extends JButton {
 	private Color couleur;
 	private int [] loyers;
 	private int etat;
-
+	private int numero;
 	// IHM --> affichage des attributs d'instance
 	protected JPanel panelCouleur;
 	protected JTextArea labelNom;
@@ -64,6 +64,7 @@ public class Case extends JButton {
 		this.setCouleur(tabCouleur[i]);
 		this.setLoyers(tabLoyer[i]);
 		this.setEtat(tabEtat[i]);
+		this.setNumero(i);
 
 		this.chargerLogos();
 		
@@ -115,6 +116,14 @@ public class Case extends JButton {
 
 	public void setLoyers(int [] loyers) {
 		this.loyers = loyers;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
 
 }
