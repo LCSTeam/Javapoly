@@ -24,14 +24,15 @@ public class JPanelJoueurs extends JPanel implements ActionListener{
 		this.setBounds(10,0,230,100);
 		TitledBorder contour = BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black),
 				"Joueur", TitledBorder.CENTER, TitledBorder.LEFT);
+		joueur= new Joueur();
 		this.setBorder(contour);
 		this.setBackground(new Color(214, 231, 212));
 		this.dessinerPanel();
+		
 	}
 	
 	public void dessinerPanel(){
 		this.setLayout(null);
-		this.setJoueur(new Joueur());
 		this.voirCasesJoueur = new JButton("Voir les propriétés");
 		this.banque = new JLabel("Banque : "+this.joueur.getBourse());
 
@@ -39,17 +40,21 @@ public class JPanelJoueurs extends JPanel implements ActionListener{
 		this.banque.setBounds(10,25,150,20);
 		this.add(this.voirCasesJoueur);
 		this.add(this.banque);
+		this.voirCasesJoueur.addActionListener(this);
 		
 	}
 	
-	public void afficherCartesJoueurs(){
-		
-		JPanel j =new JPanel();
-		this.joueur.afficherCartes();
-	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		
+		if(e.getSource()==this.voirCasesJoueur){
+			
+			AfficherCartesJoueur a = new AfficherCartesJoueur(joueur);
+			a.setVisible(true);
+			a.setModal(true);
+			
+		}
 	
 		
 	}

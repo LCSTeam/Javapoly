@@ -103,11 +103,11 @@ public void setAchetee(boolean achetee) {
 			this.setAchetee(true);
 			this.estAchetee(laCase);
 			
+			
+			System.out.println("numéro : "+laCase.getNumero()+ " la Case : " + laCase.getNom());
+			
+			j.getCartes().put(((Case)laCase).getNumero(),(Case)laCase);
 			j.afficherCartes();
-			System.out.println("numéro : "+laCase.getNumero()+ "laCase : " + laCase.getNom());
-			
-			j.cartes.put(((Case)laCase).getNumero(),(Case)laCase);
-			
 			
 			JOptionPane.showMessageDialog(null, "Félicitations ! cette propriété est désormais la vôtre !");
 			this.dispose();

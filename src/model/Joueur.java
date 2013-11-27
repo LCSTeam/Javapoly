@@ -1,12 +1,8 @@
 package model;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
-
-
 
 public class Joueur
 {
@@ -14,13 +10,12 @@ public class Joueur
 	private int bourse = 20000;
 	private int pion;
 	
-	public Map<Integer, Case> cartes ;
+	private Map<Integer, Case> cartes ;
 	
 	public Joueur()
 	{
 		this.cartes = new HashMap<Integer, Case>();
-		this.cartes.put(1, new Case(1));
-		this.cartes.put(2, new Case(2));
+
 	}
 	public String getPseudo() {
 		return pseudo;
@@ -45,20 +40,20 @@ public class Joueur
 	public Map<Integer, Case> getCartes() {
 		return cartes;
 	}
+	
 	public void setCartes(Map<Integer, Case> cartes) {
 		this.cartes = cartes;
 	}
+	
 	public void afficherCartes(){
-		
 	
 		Iterator<Integer> it = cartes.keySet().iterator();
 		while (it.hasNext()){
 			Integer cle = (Integer)it.next();
 		   	Case valeur = (Case)cartes.get(cle);
-		System.out.println( cle.toString() + valeur.toString() + "");
-		}	
-			
-			
+		System.out.println( cle.toString() + " "+valeur.toString() + "");
+		
+		}
 		
 	}
 	
