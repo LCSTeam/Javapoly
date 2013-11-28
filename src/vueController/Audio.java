@@ -6,12 +6,18 @@ import javax.sound.sampled.*;
  
 public class Audio extends Thread{
      
+     private String chemin;
      
-    AudioInputStream audioInputStream = null;
+    public Audio(String chemin) {
+		super();
+		this.chemin=chemin;
+	}
+
+	AudioInputStream audioInputStream = null;
     SourceDataLine line;
      
     public void run(){
-        File fichier = new File("sons/theme.wav");
+        File fichier = new File(chemin);
         try {
         AudioFileFormat format = AudioSystem.getAudioFileFormat(fichier);
         } catch (UnsupportedAudioFileException e1) {

@@ -81,7 +81,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 
 	public IHMMonopoly() {
 		super("Monopoly");
-		i = new Audio();
+		i = new Audio("sons/theme2.wav");
 		i.start();
 		this.createMenu();
 		this.chargeLesImages();
@@ -190,15 +190,15 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		for(int i=0;i<nbJoueurs;i++)
 		{
 			this.joueurs[i] = new Joueur();
-			this.joueurs[i].getCartes().put(2, new Case(4));
+			this.joueurs[i].getCartes().put(1, new Case(1));
 			this.joueurs[i].getCartes().put(3, new Case(5));
-			this.joueurs[i].getCartes().put(4, new Case(5));
-			this.joueurs[i].getCartes().put(23, new Case(7));
+			this.joueurs[i].getCartes().put(5, new Case(5));
+			this.joueurs[i].getCartes().put(6, new Case(7));
 			this.joueurs[i].getCartes().put(24, new Case(8));
 			this.joueurs[i].getCartes().put(25, new Case(9));
 			this.joueurs[i].getCartes().put(12, new Case(9));
 			this.joueurs[i].getCartes().put(13, new Case(9));
-			this.joueurs[i].getCartes().put(17, new Case(9));
+			this.joueurs[i].getCartes().put(18, new Case(9));
 			this.panelUnJoueur[i] = new JPanelJoueurs(joueurs[i]);
 			this.panelCartesJoueurs.add(this.panelUnJoueur[i]);
 
@@ -399,12 +399,14 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 
 	
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
 		///////Actions du menu///////////////////////////////////
 		
 		if(e.getSource()==menuItemNouveau){
+			i.stop();
 			this.dispose();
 			IHMMonopoly m = new IHMMonopoly();
 			m.setVisible(true);
@@ -418,7 +420,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 			}
 		}
 		if(e.getSource()==menuItemRetourMenu){
-			
+			i.stop();
 			this.dispose();
 			IHMMenu m = new IHMMenu();
 			m.setVisible(true);
@@ -444,6 +446,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		if (e.getSource() == this.buttonLancerDes) {
 			
 			this.lancerLesDes();
+			
 			
 		}
 
@@ -513,7 +516,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		}
 		
 		if(e.getSource()==menuItemActiverMusique){
-			i= new Audio();
+			i= new Audio("sons/theme2.wav");
 			i.start();
 			
 		}
