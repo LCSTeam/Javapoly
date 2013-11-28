@@ -63,6 +63,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 	private JLabel unPion;
 	
 	private Joueur [] joueurs;
+	private Audio i;
 	
 	/////Eléments du menu///////////////////
 	
@@ -74,9 +75,14 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 	private JMenuItem menuItemRetourMenu;	
 	private JMenu menuAide;
 	private JMenuItem menuItemAPropos;
+	private JMenu menuMusique;
+	private JMenuItem menuItemActiverMusique;
+	private JMenuItem menuItemDesactiverMusique;
 
 	public IHMMonopoly() {
 		super("Monopoly");
+		i = new Audio();
+		i.start();
 		this.createMenu();
 		this.chargeLesImages();
 		this.creePanels();
@@ -96,12 +102,12 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		this.setJMenuBar(barreMenu);
 		// création des menus
 		menuJeu = new JMenu("Jeu");
-		
+		menuMusique= new JMenu("Musique");
 		menuAide = new JMenu("?");
 
 		// ajout des menus à la barre
 		barreMenu.add(menuJeu);
-		
+		barreMenu.add(menuMusique);
 		barreMenu.add(menuAide);
 
 		// création des sous menus
@@ -110,12 +116,17 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		menuItemRegles = new JMenuItem("Règles");
 		menuItemRetourMenu = new JMenuItem("Retour au menu");	
 		menuItemAPropos = new JMenuItem("à propos");
+		menuItemActiverMusique =new JMenuItem("Activer la musique");
+		menuItemDesactiverMusique =new JMenuItem("Désactiver la musique");
 
 		// ajout des sous-menus aux menus
 		menuJeu.add(menuItemNouveau);
 		menuJeu.add(menuItemRegles);		
 		menuJeu.add(menuItemRetourMenu);
 		menuJeu.add(menuItemQuitter);
+		
+		menuMusique.add(menuItemActiverMusique);
+		menuMusique.add(menuItemDesactiverMusique);
 		
 		menuAide.add(menuItemAPropos);
 
@@ -124,7 +135,8 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		menuItemRegles.addActionListener(this);
 		menuItemRetourMenu.addActionListener(this);
 		menuItemQuitter.addActionListener(this);
-		
+		menuItemActiverMusique.addActionListener(this);
+		menuItemDesactiverMusique.addActionListener(this);
 		menuItemAPropos.addActionListener(this);
 	}
 
@@ -178,8 +190,15 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		for(int i=0;i<nbJoueurs;i++)
 		{
 			this.joueurs[i] = new Joueur();
-			this.joueurs[i].getCartes().put(1, new Case(1));
-			this.joueurs[i].getCartes().put(2, new Case(2));
+			this.joueurs[i].getCartes().put(2, new Case(4));
+			this.joueurs[i].getCartes().put(3, new Case(5));
+			this.joueurs[i].getCartes().put(4, new Case(5));
+			this.joueurs[i].getCartes().put(23, new Case(7));
+			this.joueurs[i].getCartes().put(24, new Case(8));
+			this.joueurs[i].getCartes().put(25, new Case(9));
+			this.joueurs[i].getCartes().put(12, new Case(9));
+			this.joueurs[i].getCartes().put(13, new Case(9));
+			this.joueurs[i].getCartes().put(17, new Case(9));
 			this.panelUnJoueur[i] = new JPanelJoueurs(joueurs[i]);
 			this.panelCartesJoueurs.add(this.panelUnJoueur[i]);
 
@@ -249,25 +268,25 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		this.cases[0] = new JButton(this.depart);
 		this.cases[0].setBounds(550, 550, 100, 100);
 		this.cases[0].setBorder(BorderFactory.createMatteBorder(1, 1, 2, 2,Color.black));
-		this.cases[0].addActionListener(this);
+		//this.cases[0].addActionListener(this);
 
 		// Simple visite ou prison
 		this.cases[10] = new JButton(this.simpleVisite);
 		this.cases[10].setBounds(0, 550, 100, 100);
 		this.cases[10].setBorder(BorderFactory.createMatteBorder(1, 2, 2, 1,Color.black));
-		this.cases[10].addActionListener(this);
+		//this.cases[10].addActionListener(this);
 
 		// Parc gratuit
 		this.cases[20] = new JButton(this.parc);
 		this.cases[20].setBounds(0, 0, 100, 100);
 		this.cases[20].setBorder(BorderFactory.createMatteBorder(2, 2, 1, 1,Color.black));
-		this.cases[20].addActionListener(this);
+		//this.cases[20].addActionListener(this);
 
 		// Allez en prison
 		this.cases[30] = new JButton(this.prison);
 		this.cases[30].setBounds(550, 0, 100, 100);
 		this.cases[30].setBorder(BorderFactory.createMatteBorder(2, 1, 1, 2,Color.black));
-		this.cases[30].addActionListener(this);
+		//this.cases[30].addActionListener(this);
 
 		this.panelPlateau.add(this.cases[0]);
 		this.panelPlateau.add(this.cases[10]);
@@ -487,11 +506,19 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 					c.setVisible(true);
 					AchatCartePropriete a = new AchatCartePropriete(this,(Case) this.cases[i], this.joueurs[1]);
 					a.setVisible(true);
-					this.joueurs[1].getCartes().put(((Case)this.cases[i]).getNumero(), ((Case)this.cases[i]));
 					//a.setModal(true);
 				}
 			}
 
+		}
+		
+		if(e.getSource()==menuItemActiverMusique){
+			i= new Audio();
+			i.start();
+			
+		}
+		if(e.getSource()==menuItemDesactiverMusique){
+			i.stop();
 		}
 
 	}
@@ -500,6 +527,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 	public static void main(String[] args) {
 		IHMMonopoly m = new IHMMonopoly();
 		m.setVisible(true);
+	
 	}
 
 }
