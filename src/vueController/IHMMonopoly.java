@@ -180,7 +180,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		this.panelInfoJeu.setBackground(new Color(214, 231, 212));
 		
 		this.panelCartesJoueurs = new JPanel();
-		this.panelCartesJoueurs.setLayout(new GridLayout(4,1));
+		this.panelCartesJoueurs.setLayout(new GridLayout(4,3));
 		this.panelCartesJoueurs.setBounds(10, 15, 250, 440);
 		this.panelCartesJoueurs.setBackground(new Color(214, 231, 212));
 		
@@ -190,15 +190,8 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		for(int i=0;i<nbJoueurs;i++)
 		{
 			this.joueurs[i] = new Joueur();
-			this.joueurs[i].getCartes().put(1, new Case(1));
-			this.joueurs[i].getCartes().put(3, new Case(5));
-			this.joueurs[i].getCartes().put(5, new Case(5));
-			this.joueurs[i].getCartes().put(6, new Case(7));
-			this.joueurs[i].getCartes().put(24, new Case(8));
-			this.joueurs[i].getCartes().put(25, new Case(9));
-			this.joueurs[i].getCartes().put(12, new Case(9));
-			this.joueurs[i].getCartes().put(13, new Case(9));
-			this.joueurs[i].getCartes().put(18, new Case(9));
+			
+
 			this.panelUnJoueur[i] = new JPanelJoueurs(joueurs[i]);
 			this.panelCartesJoueurs.add(this.panelUnJoueur[i]);
 
@@ -490,6 +483,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 					c.setVisible(true);
 					AchatCarteGare a = new AchatCarteGare(this,(Case) this.cases[i]);
 					a.setVisible(true);
+					this.joueurs[1].getCartes().put(((Case) this.cases[i]).getNumero(), (Case) this.cases[i]);
 					//a.setModal(true);
 				}
 				
@@ -500,6 +494,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 					c.setVisible(true);
 					AchatCarteCompagnie a = new AchatCarteCompagnie(this,(Case) this.cases[i]);
 					a.setVisible(true);
+					this.joueurs[1].getCartes().put(((Case) this.cases[i]).getNumero(), (Case) this.cases[i]);
 				//	a.setModal(true);
 				}
 
@@ -509,6 +504,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 					c.setVisible(true);
 					AchatCartePropriete a = new AchatCartePropriete(this,(Case) this.cases[i], this.joueurs[1]);
 					a.setVisible(true);
+					this.joueurs[1].getCartes().put(((Case) this.cases[i]).getNumero(), (Case) this.cases[i]);
 					//a.setModal(true);
 				}
 			}

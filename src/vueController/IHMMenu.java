@@ -2,12 +2,9 @@ package vueController;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.util.Random;
-
 import javax.swing.*;
 
-import model.Case;
-
+@SuppressWarnings("serial")
 public class IHMMenu extends JFrame implements ActionListener{
 	
 	private JPanel panelBoutons;
@@ -31,18 +28,10 @@ public class IHMMenu extends JFrame implements ActionListener{
 	private JRadioButton deuxPlayer;
 	private JRadioButton troisPlayer;
 	private JRadioButton quatrePlayer;
-	private JRadioButton unPlayer;
 	private ImageIcon [] imagePion;
 	private ButtonGroup bg;
+
 	
-	private ImageIcon bateau;
-	private ImageIcon brouette;
-	private ImageIcon chapeau;
-	private ImageIcon chaussure;
-	private ImageIcon chien;
-	private ImageIcon coudre;
-	private ImageIcon repasser;
-	private ImageIcon voiture;
 	private String [] pions={"bateau","brouette","voiture","chapeau","chaussure","chien","coudre","repasser"};
 	private Audio i;
 	

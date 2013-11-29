@@ -12,6 +12,7 @@ import javax.swing.JPanel;
 import vueController.cases.CaseBas;
 import model.Joueur;
 
+@SuppressWarnings("serial")
 public class AfficherCartesJoueur extends JDialog {
 
 	private Joueur joueur;
