@@ -516,8 +516,14 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		}
 		
 		if(e.getSource()==menuItemActiverMusique){
+			
+			if(i.isAlive()==false){
 			i= new Audio("sons/theme2.wav");
 			i.start();
+			}else
+			{
+				
+			}
 			
 		}
 		if(e.getSource()==menuItemDesactiverMusique){
