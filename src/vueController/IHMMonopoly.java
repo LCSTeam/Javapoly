@@ -14,6 +14,9 @@ import model.Joueur;
 import com.sun.image.codec.jpeg.JPEGCodec;
 import com.sun.image.codec.jpeg.JPEGImageEncoder;
 
+import vueController.achatCarte.AchatCarteCompagnie;
+import vueController.achatCarte.AchatCarteGare;
+import vueController.achatCarte.AchatCartePropriete;
 import vueController.carteHorizontale.CarteCDC;
 import vueController.carteHorizontale.CarteChance;
 import vueController.carteHorizontale.CarteImpot;

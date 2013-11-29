@@ -52,7 +52,7 @@ public class CarteHorizontale extends JDialog implements ActionListener {
 		contenu.setLayout(null);
 
 		this.ok.setBounds(150, 180, 60, 30);
-		this.panelCouleur.setBounds(1, 1, 358, 100);
+		this.panelCouleur.setBounds(5, 5, 350, 100);
 		this.intitule.setBounds(20, 130, 340, 40);
 		this.intitule.setLineWrap(true);
 		this.intitule.setWrapStyleWord(true);

@@ -109,6 +109,7 @@ class labelRetourne extends JLabel
     }
 }
 
+@SuppressWarnings("serial")
 class areaRetourne extends JTextArea
 {
 	public areaRetourne(String lab)

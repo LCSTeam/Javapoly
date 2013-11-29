@@ -1,4 +1,4 @@
-package vueController;
+package vueController.achatCarte;
 
 import java.awt.Color;
 import java.awt.Container;
@@ -6,26 +6,28 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+import vueController.carteVerticale.CartePropriete;
 import model.Case;
-import vueController.carteVerticale.CarteGare;
+import model.Joueur;
 
-public class AchatCarteGare extends CarteGare implements ActionListener{
-	
+@SuppressWarnings("serial")
+public class AchatCartePropriete extends CartePropriete implements ActionListener {
+
 	private JLabel labelConfirmAchat;
 	private JButton boutonOui;
 	private JButton boutonNon;
 	private JPanel panelBoutons;
 	private Case laCase;
 	private boolean achetee;
-	
-	public AchatCarteGare(JFrame parent, Case laCase) {
+
+
+	public AchatCartePropriete(JFrame parent, Case laCase, Joueur joueur) {
 		super(parent, laCase);
 		this.setTitle("Achat de propriété");
 		this.setSize(400,500);
@@ -39,7 +41,7 @@ public class AchatCarteGare extends CarteGare implements ActionListener{
 
 		Container contenu = this.getContentPane();
 		contenu.setLayout(null);
-
+		
 		this.labelConfirmAchat = new JLabel(
 				"Voulez-vous acheter cette propriété pour "+this.laCase.getPrix()+" € ?");
 				
@@ -60,17 +62,7 @@ public class AchatCarteGare extends CarteGare implements ActionListener{
 		this.boutonNon.addActionListener(this);
 
 	}
-
-	public Case getLaCase() {
-		return laCase;
-	}
-
-
-	public void setLaCase(Case laCase) {
-		this.laCase = laCase;
-	}
-	
-	public boolean estAchetee(Case laCase){
+public boolean estAchetee(Case laCase){
 		
 		if(this.achetee==true){
 			
@@ -82,14 +74,23 @@ public class AchatCarteGare extends CarteGare implements ActionListener{
 				
 	}
 
-
 	public boolean isAchetee() {
-		return achetee;
+	return achetee;
+}
+
+
+public void setAchetee(boolean achetee) {
+	this.achetee = achetee;
+}
+
+
+	public Case getLaCase() {
+		return laCase;
 	}
 
 
-	public void setAchetee(boolean achetee) {
-		this.achetee = achetee;
+	public void setLaCase(Case laCase) {
+		this.laCase = laCase;
 	}
 
 
@@ -99,15 +100,16 @@ public class AchatCarteGare extends CarteGare implements ActionListener{
 		if(e.getSource()==this.boutonOui){
 			this.setAchetee(true);
 			this.estAchetee(laCase);
+
+						
 			JOptionPane.showMessageDialog(null, "Félicitations ! cette propriété est désormais la vôtre !");
-			
 			this.dispose();
 		}
 		if(e.getSource()==this.boutonNon){
-		
 			this.dispose();
 		}
 
 	}
-
+	
+	
 }

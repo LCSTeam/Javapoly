@@ -8,14 +8,14 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 import javax.swing.JDialog;
-import javax.swing.JEditorPane;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
 @SuppressWarnings("serial")
 public class Regles extends JDialog{
 
-	private JEditorPane regles;
+	private JLabel regles;
 	private JScrollPane scroll;
 	private JPanel panelRegles;
 	
@@ -37,15 +37,11 @@ public class Regles extends JDialog{
 		Container contenu = this.getContentPane();
 		
 		this.panelRegles =new JPanel();
-		this.regles = new JEditorPane();
+		this.regles = new JLabel();
 		this.scroll =new JScrollPane(regles);
 		
 		this.regles.setBounds(5,5,390,600);
-//		this.regles.setLineWrap(true);
-//		this.regles.setWrapStyleWord(true);
 		this.regles.setOpaque(false);
-		this.regles.setEditable(false);
-
 		
 
 		this.panelRegles.setLayout(new BorderLayout());
@@ -55,8 +51,7 @@ public class Regles extends JDialog{
 		
 		String chaine="";
 		String fichier ="regles.txt";
-		
-		//lecture du fichier texte	
+
 		try{
 			InputStream ips=new FileInputStream(fichier); 
 			InputStreamReader ipsr=new InputStreamReader(ips);
@@ -67,7 +62,6 @@ public class Regles extends JDialog{
 				
 			}
 			this.regles.setText(chaine);
-			this.regles.setCaretPosition(0);
 			br.close(); 
 		}		
 		catch (Exception e){
@@ -75,6 +69,11 @@ public class Regles extends JDialog{
 		}
 	}
 		
+	public static void main(String[] args) {
+		Regles m = new Regles();
+		m.setVisible(true);
+	
+	}
 
 
 }

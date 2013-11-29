@@ -1,4 +1,5 @@
-Le jeu en bref
+<html>
+<h1>Le jeu en bref</h1>
 Monopoly est le jeu où l'on achète, loue et vend des propriétés de façon à accroître ses richesses - le joueur le plus riche étant le vainqueur. 
 En partant de la case départ, déplacez votre pion sur le plateau de jeu suivant votre résultat au lancer de dés. 
 Quand vous arrivez sur une case qui n'appartient encore à personne, vous pouvez l'acheter à la banque. Si vos décidez de ne pas l'acheter, la propriété sera proposée aux enchères et reviendra au plus offrant. 
@@ -9,15 +10,17 @@ But du jeu
 Etre le seul joueur qui n'ait pas fait faillite.
 
 Matériel
-1 plateau de jeu
-10 pions
-28 cartes de propriété
-16 cartes chance
-16 cartes caisse de communauté
-1 paquet de billets de banque pour MONOPOLY
-32 maisons
-12 hôtels
-2 dés
+<ul>
+<li>1 plateau de jeu</li>
+<li>10 pions</li>
+<li>28 cartes de propriété</li>
+<li>16 cartes chance</li>
+<li>16 cartes caisse de communauté</li>
+<li>1 paquet de billets de banque pour MONOPOLY</li>
+<li>32 maisons</li>
+<li>12 hôtels</li>
+<li>2 dés</li>
+</ul>
 
 Règle de jeu rapide
 Monopoly se joue aussi de manière plus rapide. Reportez-vous au paragraphe "Règle pour une partie plus rapide".
@@ -161,3 +164,4 @@ Le vainqueur est le joueur le plus riche.
 
 Partie limitée dans le temps
 Avant de commencer la partie, convenez d'une heure limite pour la fin du jeu. Le joueur le plus riche à l'heure conveneu est le vainqueur. Au début de la partie les cartes de propriété sont mélangées et coupées, et le banquier donne deux cartes à chaque joueur. Les joueurs payent aussitôt à la banque le prix de ces propriétés et le jeu continue normalement.
+</html>

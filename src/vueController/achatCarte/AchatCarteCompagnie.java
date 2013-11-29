@@ -1,4 +1,4 @@
-package vueController;
+package vueController.achatCarte;
 
 import java.awt.Color;
 import java.awt.Container;
@@ -6,7 +6,6 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -16,6 +15,7 @@ import javax.swing.JPanel;
 import vueController.carteVerticale.CarteCompagnie;
 import model.Case;
 
+@SuppressWarnings("serial")
 public class AchatCarteCompagnie extends CarteCompagnie implements ActionListener {
 	
 	private JLabel labelConfirmAchat;
