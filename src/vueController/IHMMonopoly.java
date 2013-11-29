@@ -81,7 +81,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 
 	public IHMMonopoly() {
 		super("Monopoly");
-		i = new Audio("sons/theme2.wav");
+		i = new Audio("sons/theme.wav");
 		i.start();
 		this.createMenu();
 		this.chargeLesImages();
