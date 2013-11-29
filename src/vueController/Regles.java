@@ -68,7 +68,6 @@ public class Regles extends JDialog{
 			}
 			this.regles.setText(chaine);
 			this.regles.setCaretPosition(0);
-			System.out.println(chaine);
 			br.close(); 
 		}		
 		catch (Exception e){

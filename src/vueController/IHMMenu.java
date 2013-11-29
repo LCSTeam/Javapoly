@@ -44,10 +44,13 @@ public class IHMMenu extends JFrame implements ActionListener{
 	private ImageIcon repasser;
 	private ImageIcon voiture;
 	private String [] pions={"bateau","brouette","voiture","chapeau","chaussure","chien","coudre","repasser"};
+	private Audio i;
 	
 	public IHMMenu() {
 		
 		super("Monopoly");
+		i =new Audio("sons/menu.wav");
+		i.start();
 		this.chargerImage();
 		this.creePanels();
 		
