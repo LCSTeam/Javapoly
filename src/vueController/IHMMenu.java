@@ -77,7 +77,7 @@ public class IHMMenu extends JFrame implements ActionListener{
 	{
 		
 		
-		// Panel gÃ©nÃ©ral
+		// Panel général
 		this.panelBoutons = new JPanel();
 		this.panelBoutons.setLayout(null);
 		this.panelBoutons.setBounds(50,50,700,650);
@@ -104,29 +104,38 @@ public class IHMMenu extends JFrame implements ActionListener{
 		this.panelPage2 = new JPanel();
 		this.panelPage2.setLayout(null);
 		this.panelPage2.setBounds(0,400,700,200);
+		//this.panelPage2.setVisible(false);
+		
 		this.nbJoueurs = new JLabel("Choisissez le nombre de joueurs");
-		this.nbJoueurs.setBounds(250,450,250,60);
+		this.nbJoueurs.setBounds(100,30,250,30);
+		
 		this.suivant = new JButton("Suivant");
-		this.suivant.setBounds(400, 550, 100, 60);
-		this.precedent = new JButton("PrÃ©cÃ©dent");
-		this.precedent.setBounds(200, 550, 100, 60);
+		this.suivant.setBounds(400, 140, 100, 60);
+		
+		this.precedent = new JButton("Précédent");
+		this.precedent.setBounds(200, 140, 100, 60);
+		
 		this.panelNbJoueurs = new JPanel();
 		this.panelNbJoueurs.setLayout(new GridLayout(1,3));
-		this.panelNbJoueurs.setBounds(0,60,700,50);
+		this.panelNbJoueurs.setBounds(200,60,400,50);
+		
 		this.deuxPlayer = new JRadioButton("Deux");
 		this.troisPlayer = new JRadioButton("Trois");
 		this.quatrePlayer = new JRadioButton("Quatre");
+		
 		this.panelNbJoueurs.add(this.deuxPlayer);
 		this.panelNbJoueurs.add(this.troisPlayer);
 		this.panelNbJoueurs.add(this.quatrePlayer);
-		this.panelPage2.add(this.nbJoueurs);
+		
 		this.bg = new ButtonGroup();
 		this.bg.add(this.deuxPlayer);
 		this.bg.add(this.troisPlayer);
-		this.bg.add(this.quatrePlayer);
+		this.bg.add(this.quatrePlayer);		
+		
+		this.panelPage2.add(this.nbJoueurs);
 		this.panelPage2.add(this.suivant);
 		this.panelPage2.add(this.precedent);
-		
+		this.panelPage2.add(this.panelNbJoueurs);
 		
 		this.panelBoutons.add(this.panelPage2);
 		
@@ -149,26 +158,14 @@ public class IHMMenu extends JFrame implements ActionListener{
 		}
 		
 
-		
-		
-
 		this.jouer = new JButton("Jouer");
 		this.jouer.setBounds(400, 550, 100, 60);
 		
-		this.precedent2 = new JButton("PrÃ©cÃ©dent");
+		this.precedent2 = new JButton("Précédent");
 		this.precedent2.setBounds(200, 550, 100, 60);
 		
-
-
-		
-
 		this.panelBoutons.add(this.jouer);
-		
 		this.panelBoutons.add(this.precedent2);
-		
-		
-		
-
 		
 		
 		jouer.addActionListener(this);
@@ -185,37 +182,28 @@ public class IHMMenu extends JFrame implements ActionListener{
 		aPropos.addActionListener(this);
 		suivant.addActionListener(this);
 		
-		suivant.setVisible(false);
+		
 		jouer.setVisible(false);
-		precedent.setVisible(false);
 		precedent2.setVisible(false);
-		deuxPlayer.setVisible(false);
-		troisPlayer.setVisible(false);
-		quatrePlayer.setVisible(false);
-		nbJoueurs.setVisible(false);
-		
 		panelPions.setVisible(false);
-		
-		
 	}
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		IHMMenu menu =  new IHMMenu();  
 		menu.setVisible(true);
 	}
 
 	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
+	public void actionPerformed(ActionEvent e)
+	{
 		if (e.getSource() ==quitter) {
 			System.exit(0);
 		}
 		
 		if (e.getSource() ==aPropos) {
-			JOptionPane.showMessageDialog(this, "Ce jeu a Ã©tÃ© rÃ©alisÃ© par\n\nCyril CARON,\nLÃ©o LETOURNEUR\net Alexandre SIMONIN\n\nNous sommes de jeunes dÃ©veloppeurs et nous avons "
-					+ "voulu mettre en pratique nos connaissances en Java en crÃ©ant ce jeu !\n\nAmusez vous bien !");
+			JOptionPane.showMessageDialog(this, "Ce jeu a été réalisé par\n\nCyril CARON,\nLéo LETOURNEUR\net Alexandre SIMONIN\n\nNous sommes de jeunes développeurs et nous avons "
+					+ "voulu mettre en pratique nos connaissances en Java en créant ce jeu !\n\nAmusez vous bien !");
 		}
 		
 		if (e.getSource() ==regles) {
@@ -233,54 +221,26 @@ public class IHMMenu extends JFrame implements ActionListener{
 		}
 		
 		if (e.getSource() ==precedent) {
-			jouer.setVisible(false);
-			precedent.setVisible(false);
-			deuxPlayer.setVisible(false);
-			troisPlayer.setVisible(false);
-			quatrePlayer.setVisible(false);
-			nbJoueurs.setVisible(false);
-			suivant.setVisible(false);
-			precedent2.setVisible(false);
-			panelPions.setVisible(false);
 			
-			start.setVisible(true);
-			quitter.setVisible(true);
-			regles.setVisible(true);
-			aPropos.setVisible(true);
-			
+			panelPage1.setVisible(true);
+			panelPage2.setVisible(false);
 		}
 		
 		if (e.getSource() ==precedent2) {
+			
+			panelPage2.setVisible(true);
 			jouer.setVisible(false);
-			precedent.setVisible(false);
+			precedent2.setVisible(false);
 			panelPions.setVisible(false);
-			precedent.setVisible(true);
-			deuxPlayer.setVisible(true);
-			troisPlayer.setVisible(true);
-			quatrePlayer.setVisible(true);
-			nbJoueurs.setVisible(true);
-			suivant.setVisible(true);
-			
-			
 			
 		}
 		
 		if (e.getSource() ==suivant) {
-			start.setVisible(false);
-			quitter.setVisible(false);
-			regles.setVisible(false);
-			aPropos.setVisible(false);
-			deuxPlayer.setVisible(false);
-			troisPlayer.setVisible(false);
-			quatrePlayer.setVisible(false);
-			nbJoueurs.setVisible(false);
-			precedent.setVisible(false);
 			
+			panelPage2.setVisible(false);
 			jouer.setVisible(true);
 			precedent2.setVisible(true);
 			panelPions.setVisible(true);
-				
-		
 			
 		}
 		

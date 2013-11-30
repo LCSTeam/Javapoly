@@ -45,18 +45,18 @@ public class AfficherCartesJoueur extends JDialog {
 		labelPasDeCartes.setBounds(30, 50, 200, 30);
 		panel.setBounds(5, 5, 280, 400);
 		panel.setLayout(new GridLayout(3, 3, 20, 20));
-		c = new CaseBas[39];
+		c = new CaseBas[40];
 
 		contenu.add(panel);
 
-		if (joueur.getCartes().isEmpty() == false)
-			this.displayCartes();
+		if (!joueur.getCartes().isEmpty())
+			this.afficherCartes();
 		else
 			panel.add(labelPasDeCartes);
 
 	}
 
-	public void displayCartes() {
+	public void afficherCartes() {
 
 		Set<Integer> listKeys = this.joueur.getCartes().keySet();
 
