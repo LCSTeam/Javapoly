@@ -67,7 +67,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 	
 	private Joueur [] joueurs;
 	private Audio i;
-	
+		
 	/////Eléments du menu///////////////////
 	
 	private JMenuBar barreMenu;
@@ -81,6 +81,11 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 	private JMenu menuMusique;
 	private JMenuItem menuItemActiverMusique;
 	private JMenuItem menuItemDesactiverMusique;
+	private JMenu menuItemChoixTheme;
+	
+	private JRadioButtonMenuItem theme1;
+	private JRadioButtonMenuItem theme2;
+	private ButtonGroup boutonGroup;
 
 	public IHMMonopoly() {
 		super("Monopoly");
@@ -121,6 +126,12 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		menuItemAPropos = new JMenuItem("à propos");
 		menuItemActiverMusique =new JMenuItem("Activer la musique");
 		menuItemDesactiverMusique =new JMenuItem("Désactiver la musique");
+		this.menuItemChoixTheme =new JMenu("Choix de la musique");
+		theme1 = new JRadioButtonMenuItem("Theme 1");
+		theme2 = new JRadioButtonMenuItem("Theme 2");
+		boutonGroup = new ButtonGroup();
+		boutonGroup.add(theme1);
+		boutonGroup.add(theme2);
 
 		// ajout des sous-menus aux menus
 		menuJeu.add(menuItemNouveau);
@@ -128,8 +139,13 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		menuJeu.add(menuItemRetourMenu);
 		menuJeu.add(menuItemQuitter);
 		
+		menuMusique.add(this.menuItemChoixTheme);
+		menuItemChoixTheme.add(theme1);
+		menuItemChoixTheme.add(theme2);
 		menuMusique.add(menuItemActiverMusique);
 		menuMusique.add(menuItemDesactiverMusique);
+		
+		theme2.setSelected(true);
 		
 		menuAide.add(menuItemAPropos);
 
@@ -141,6 +157,8 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		menuItemActiverMusique.addActionListener(this);
 		menuItemDesactiverMusique.addActionListener(this);
 		menuItemAPropos.addActionListener(this);
+		theme1.addActionListener(this);
+		theme2.addActionListener(this);
 	}
 
 	public void chargeLesImages() {
@@ -411,8 +429,9 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 			int rep = JOptionPane.showConfirmDialog(null, "Voulez vous vraiment quitter ?","Quitter le jeu",JOptionPane.YES_NO_OPTION);
 			switch(rep){
 			case(0):
-				this.dispose();			
-			
+				this.dispose();	
+				i.stop();
+							
 			}
 		}
 		if(e.getSource()==menuItemRetourMenu){
@@ -428,6 +447,22 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 			r.setModal(true);
 		
 		}
+		
+		if(e.getSource()==theme1){
+			i.stop();
+			i= new Audio("sons/theme.wav");
+			i.start();	
+			
+			
+		}
+		
+		if(e.getSource()==theme2){
+			i.stop();
+			i= new Audio("sons/theme2.wav");
+			i.start();
+			
+		}
+		
 		if(e.getSource()==this.menuItemAPropos){
 			
 			JOptionPane
@@ -437,13 +472,28 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 							+ "voulu mettre en pratique nos connaissances en Java en créant ce jeu !\n\nAmusez vous bien !\n\nMonopoly est une propriété de Hasbro");
 		}
 		
+		if(e.getSource()==menuItemActiverMusique){
+					
+					if(i.isAlive()==false){
+					i= new Audio("sons/theme.wav");
+					i.start();
+					}else
+					{
+						
+					}
+					
+				}
+		if(e.getSource()==menuItemDesactiverMusique){
+			i.stop();
+			
+		}
+		
 		///////Actions des boutons//////////////////////////////////////
 
 		if (e.getSource() == this.buttonLancerDes) {
 			
 			this.lancerLesDes();
-			
-			
+						
 		}
 
 		for (int i = 0; i <= 39; i++) {
@@ -514,20 +564,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 
 		}
 		
-		if(e.getSource()==menuItemActiverMusique){
-			
-			if(i.isAlive()==false){
-			i= new Audio("sons/theme2.wav");
-			i.start();
-			}else
-			{
-				
-			}
-			
-		}
-		if(e.getSource()==menuItemDesactiverMusique){
-			i.stop();
-		}
+		
 
 	}
 
