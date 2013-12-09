@@ -90,7 +90,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 	public IHMMonopoly() {
 		super("Monopoly");
 		i = new Audio("sons/theme.wav");
-		i.start();
+		//i.start();
 		this.createMenu();
 		this.chargeLesImages();
 		this.creePanels();
@@ -181,13 +181,14 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		this.unPion = new JLabel();
 		this.unPion.setIcon(new ImageIcon(ClassLoader.getSystemResource("pions/bateau.png")));
 		this.unPion.setName("0");
-		this.unPion.setBounds(this.cases[0].getBounds().x, this.cases[0].getBounds().y, 50, 50);
+		this.unPion.setBounds((int)this.cases[0].getLocation().getX(), (int)this.cases[0].getLocation().getY(), 50, 50);
 		
 		Container contenu = this.getContentPane();
 		contenu.setLayout(null);
 		contenu.add(panelPlateau);
 		contenu.add(panelInfoJeu);
-		panelPlateau.add(unPion, 1);
+		
+		panelPlateau.add(unPion, 0);
 		
 
 	}
@@ -302,10 +303,10 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		this.cases[30].setBorder(BorderFactory.createMatteBorder(2, 1, 1, 2,Color.black));
 		//this.cases[30].addActionListener(this);
 
-		this.panelPlateau.add(this.cases[0]);
-		this.panelPlateau.add(this.cases[10]);
-		this.panelPlateau.add(this.cases[20]);
-		this.panelPlateau.add(this.cases[30]);
+		panelPlateau.add(cases[0]);
+		panelPlateau.add(cases[10]);
+		panelPlateau.add(cases[20]);
+		panelPlateau.add(cases[30]);
 
 		this.panelBas.setLayout(new GridLayout(1, 9));
 		for (int i = 9; i >= 1; i--) {
@@ -355,6 +356,10 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		int resultat= (Integer.parseInt(this.labelDe1.getName()) + Integer.parseInt(this.labelDe2.getName()));
 		this.deplacement.setText("Vous avez fait "+resultat);
 		
+		
+		this.unPion.setName(resultat+"");
+		this.unPion.setLocation((int)this.getLocation().getX()+resultat, (int)this.getLocation().getY()+resultat);
+		
 		return resultat;
 	}
 	
@@ -363,13 +368,12 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 			int j = (int) (Math.random() * (7-1)) + 1;
 			int k = (int) (Math.random() * (7-1)) + 1;
 			
-				this.labelDe1.setIcon(tabDes[j-1]);
-				this.labelDe1.setName(j+"");
-				this.labelDe2.setIcon(tabDes[k-1]);
-				this.labelDe2.setName(k+"");
-				
-				this.calculDeplacement();
-		
+			this.labelDe1.setIcon(tabDes[j-1]);
+			this.labelDe1.setName(j+"");
+			this.labelDe2.setIcon(tabDes[k-1]);
+			this.labelDe2.setName(k+"");
+			
+			this.calculDeplacement();
 	}
 	
 	public void saveComponentAsJPEG(Component myComponent, String filename) {
