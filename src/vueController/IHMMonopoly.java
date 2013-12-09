@@ -145,7 +145,7 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 		menuMusique.add(menuItemActiverMusique);
 		menuMusique.add(menuItemDesactiverMusique);
 		
-		theme2.setSelected(true);
+		theme1.setSelected(true);
 		
 		menuAide.add(menuItemAPropos);
 
@@ -555,10 +555,16 @@ public class IHMMonopoly extends JFrame implements ActionListener {
 					CartePropriete c = new CartePropriete(this,(Case) this.cases[i]);
 					c.setModal(true);
 					c.setVisible(true);
-					AchatCartePropriete a = new AchatCartePropriete(this,(Case) this.cases[i], this.joueurs[1]);
+					if(((Case) this.cases[i]).getPrix()>this.joueurs[1].getBourse()){
+						JOptionPane.showMessageDialog(null, "Vous ne pouvez pas acheter cette propriété ! Vous êtes trop pauvre");
+					}
+					else{
+						AchatCartePropriete a = new AchatCartePropriete(this,(Case) this.cases[i], this.joueurs[1]);
 					a.setVisible(true);
 					this.joueurs[1].getCartes().put(((Case) this.cases[i]).getNumero(), (Case) this.cases[i]);
 					//a.setModal(true);
+					}
+					
 				}
 			}
 

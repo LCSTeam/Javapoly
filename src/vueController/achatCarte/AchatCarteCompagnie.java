@@ -29,6 +29,7 @@ public class AchatCarteCompagnie extends CarteCompagnie implements ActionListene
 		super(parent, laCase);
 		this.setTitle("Achat de propriété");
 		this.setSize(400,500);
+		this.setResizable(false);
 		this.carte.setLocation(60,50);
 		this.setLaCase(laCase);
 		this.creer();

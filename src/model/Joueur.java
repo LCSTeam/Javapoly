@@ -7,7 +7,7 @@ import java.util.Map;
 public class Joueur
 {
 	private String pseudo;
-	private int bourse = 20000;
+	private int bourse = 200000;
 	private int pion;
 	
 	private Map<Integer, Case> cartes ;
@@ -56,6 +56,23 @@ public class Joueur
 		//System.out.println("numéro : "+((Case) cartes).getNumero()+ " la Case : " + ((Case) cartes).getNom());
 		
 		}
+		
+	}
+	
+	public boolean actualiserBourse(int prix){
+		
+		int nouveauSolde=this.getBourse()-prix;
+		if(nouveauSolde>=0){
+			
+			this.setBourse(nouveauSolde);
+			return true;
+		}
+		else{
+			
+			return false;
+			
+		}
+				
 		
 	}
 	

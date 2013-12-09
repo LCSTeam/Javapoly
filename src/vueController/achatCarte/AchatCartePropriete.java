@@ -25,14 +25,17 @@ public class AchatCartePropriete extends CartePropriete implements ActionListene
 	private JPanel panelBoutons;
 	private Case laCase;
 	private boolean achetee;
+	private Joueur joueur;
 
 
 	public AchatCartePropriete(JFrame parent, Case laCase, Joueur joueur) {
 		super(parent, laCase);
 		this.setTitle("Achat de propriété");
 		this.setSize(400,500);
+		this.setResizable(false);
 		this.carte.setLocation(60,50);
 		this.setLaCase(laCase);
+		this.setJoueur(joueur);
 		this.creer();
 	}
 	
@@ -94,15 +97,26 @@ public void setAchetee(boolean achetee) {
 	}
 
 
+	public Joueur getJoueur() {
+		return joueur;
+	}
+
+
+	public void setJoueur(Joueur joueur) {
+		this.joueur = joueur;
+	}
+
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
 		if(e.getSource()==this.boutonOui){
 			this.setAchetee(true);
 			this.estAchetee(laCase);
+			this.joueur.actualiserBourse(laCase.getPrix());
+			
+			JOptionPane.showMessageDialog(null, "Félicitations ! cette propriété est désormais la vôtre ! Votre nouveau solde est de "+this.joueur.getBourse());
 
-						
-			JOptionPane.showMessageDialog(null, "Félicitations ! cette propriété est désormais la vôtre !");
 			this.dispose();
 		}
 		if(e.getSource()==this.boutonNon){
