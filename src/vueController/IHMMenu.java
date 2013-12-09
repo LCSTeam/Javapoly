@@ -246,8 +246,10 @@ public class IHMMenu extends JFrame implements ActionListener{
 		
 		if (e.getSource() ==jouer) {
 			this.dispose();
+			i.stop();
 			IHMMonopoly m =  new IHMMonopoly();  
 			m.setVisible(true);
+			
 		}
 	}
 
